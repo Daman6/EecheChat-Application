@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/main_appbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_page_bar"
+            layout="@layout/app_bar_layout"></include>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/main_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"></com.google.android.material.tabs.TabLayout>
+
+        <View
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/main_tabs"
+            android:background="@color/white"></View>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/main_pagger"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/main_appbarlay"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        >
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+</RelativeLayout>

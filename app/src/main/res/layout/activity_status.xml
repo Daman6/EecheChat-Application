@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".StatusActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/status_toolbar"></include>
+
+    <EditText
+        android:id="@+id/status_input"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Status"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+    </EditText>
+
+
+
+    <Button
+        android:id="@+id/status_changebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:layout_below="@+id/status_input"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>

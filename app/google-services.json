@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "226486176362",
+    "firebase_url": "https://messengerapp-1337e.firebaseio.com",
+    "project_id": "messengerapp-1337e",
+    "storage_bucket": "messengerapp-1337e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226486176362:android:4115ad3de297e7493bd813",
+        "android_client_info": {
+          "package_name": "com.example.eechechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226486176362-vdtgncq3ppr1gp0v3csfjob9dc0u1tf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvP0aprNjHNM5pD6Jj6vESUNguQ8DAYSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226486176362-vdtgncq3ppr1gp0v3csfjob9dc0u1tf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

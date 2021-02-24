@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_img"
+        android:src="@drawable/userprofile"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <ImageView
+        android:id="@+id/useronline_icon"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@drawable/greendot"
+        android:layout_toRightOf="@+id/user_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_img"
+        android:layout_marginTop="10dp"
+        android:text="xoxoxo"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"></TextView>
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:id="@+id/user_messagetime"
+        android:text=""
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/user_status"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"></TextView>
+
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_toRightOf="@+id/user_img"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="xoxoxoxoxoxoxox"
+        android:textStyle="normal"
+        android:textSize="20dp"></TextView>
+
+</RelativeLayout>

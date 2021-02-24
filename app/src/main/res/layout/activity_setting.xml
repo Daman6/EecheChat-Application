@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SettingActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profileImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/userprofile">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:id="@+id/setting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="xoxoxo"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/setting_profileImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"></TextView>
+    <TextView
+       android:id="@+id/setting_status"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:hint="xoxoxoxoxoxo"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/setting_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    <Button
+        android:id="@+id/setting_img_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="CHANGE IMAGE"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/setting_status_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_img_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="CHANGE STATUS"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"/>
+</RelativeLayout>

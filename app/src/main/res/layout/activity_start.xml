@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo_transparent">
+    </ImageView>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Echee\nchat app"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:text="ALREADY HAVE ACCOUNT!"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"/>
+    <Button
+        android:id="@+id/start_reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_login_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="NEED A NEW ACCOUNT?"
+        android:textColor="@color/colorDarkPrimary"
+        android:backgroundTint="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/message_singlelayout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_userimg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/userprofile">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_username"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/message_userimg"
+        android:text="XXOOX"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp">
+    </TextView>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_usermessagetime"
+        android:layout_below="@+id/message_usermessage"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_usermessageseen"
+        android:text=""
+        android:layout_toRightOf="@+id/message_usermessage"></TextView>
+    <TextView
+        android:id="@+id/message_usermessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/message_userimg"
+        android:layout_below="@+id/message_username"
+        android:background="@drawable/message_text_shape"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="@color/white"
+        android:text="XOXOXO"></TextView>
+    <ImageView
+        android:id="@+id/message_usermessageimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_usermessage"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"></ImageView>
+</RelativeLayout>
